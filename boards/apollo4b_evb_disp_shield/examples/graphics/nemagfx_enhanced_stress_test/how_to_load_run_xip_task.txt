@@ -1,0 +1,25 @@
+By default, the xip_task will run from MRAM, but you could load it to psram and run it from psram.
+
+1, replace the default linker script file with the preset linker_script.4b.ld or linker_script.4p.ld
+   use linker_script.4b.ld for apollo4b device
+   use linker_script.4p.ld for apollo4p device
+
+2, go to gcc/bin/ folder and execute the following instruction
+    >> dd bs=1 count=1998848 if=nemagfx_enhanced_stress_test.bin of=internal.bin
+
+    #for apollo4b
+    >> dd bs=1 skip=336494592 if=nemagfx_enhanced_stress_test.bin of=external.bin
+
+    #for apollo4p
+    >> dd bs=1 skip=336592896 if=nemagfx_enhanced_stress_test.bin of=external.bin
+
+3, use J-Flash to load the internal.bin to MRAM:
+    4b: use jflash load internal.bin to 0x18000
+    4p: use jflash load internal.bin to 0x0(select nbl device)
+
+4, open J-link commander:
+    >> H
+    >> loadbin gcc\bin\external.bin 14100000
+    >> G
+
+see the log print, you should see lines start with "Running ...."

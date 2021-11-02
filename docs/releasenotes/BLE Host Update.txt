@@ -1,0 +1,181 @@
+**********************************************************************************************
+ 
+BLE host side change log from controller V1.15 to V1.20.0.0
+ 
+**********************************************************************************************
+*  Enable the Cooper debug trace's custom disconnection logs to help to capture customer's connect loss issue by default
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_dbg_trc.c
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_dbg_trc.h
+
+*  Reset Cooper if it is not ready to receive HCI packet from Apollo4 in configured timeout
+devices/am_devices_cooper.c
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.c
+
+*  Restruture the Cooper firmware version format from a.b to a.b.c.d
+devices/am_devices_cooper.c
+
+*  Modify the ATT_HCI_ERR_BASE to 0x20 to 0xA0 to eliminate the confusion of disconnection reason
+third_party/cordio/ble-host/include/att_defs.h
+
+* BLE controller driver default transmit power has been changed to 0dBm from +3dBm
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.*
+
+**********************************************************************************************
+ 
+BLE host side change log from controller V1.14 to V1.15
+ 
+**********************************************************************************************
+*   Add a Charateristics(UUID 0x5403) under throughput SVC to initiate connection update request，the
+    Charateristics supporting Read/Write/notify
+ambiq_ble/services/svc_throughput.c
+ambiq_ble/services/svc_throughput.h
+boards/common4/examples/ble/ble_freertos_throughput/src/throughput_main.c
+*   Cooper fw updated to v1.15 to solve the issue that Cooper can't wake up reliably when VDDB is supplied with 1.8V.
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/ble_fw_image.h
+
+**********************************************************************************************
+ 
+BLE host side change log from controller V1.13 to V1.14
+ 
+**********************************************************************************************
+
+*   Clean up - no need to enter/exit critical section in isr.
+ambiq_ble/apps/dtm_module/dtm_main.c
+examples/ble/ble_*/src/radio_task.c
+
+*   Changed from SEC_ECC_CFG=SEC_ECC_CFG_UECC to  SEC_ECC_CFG= SEC_ECC_CFG_HCI to generate ECC key using HCI command
+to save memory.
+examples/ble/ble_*/config-template.ini
+
+*   Added handling of invalid parameteter for HCI_OPCODE_LE_GENERATE_DHKEY on HCI layer.
+third_party/cordio/ble-host/sources/hci/ambiq/hci_evt.c
+third_party/cordio/ble-host/sources/sec/common/sec_ecc_hci.c
+
+*   Fixed bug of sending empty packet in the end of AM_DEVICES_COOPER_SBL_UPDATE_STATE_DATA
+devices/am_devices_cooper.c
+
+*   Optimized throughput example codes to fix AmbleTester application abnormally exit on phone.
+examples/ble/ble_freertos_throughput/src/throughput_main.c
+
+*   Added readRemoteFeatTimer delay before sending the HCI cmd of reading remote feature to avoid hciCmdTimeout of HCI_OPCODE_LE_READ_REMOTE_FEAT.
+third_party/cordio/ble-profiles/sources/apps/app/app_main.c
+third_party/cordio/ble-profiles/sources/apps/app/app_master.c
+third_party/cordio/ble-profiles/sources/apps/app/app_slave.c
+
+*   Defect fix for am_devices_cooper_crystal_trim_set function.
+devices/am_devices_cooper.c
+
+*   Fix the DmDevReset flow bug when hciCmdTimeout happens
+third_party/cordio/ble-host/sources/hci/ambiq/hci_cmd.c
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_vs_cooper.c
+third_party/cordio/ble-host/include/hci_cmd.h
+
+*   Change to support interrupt base mechanism for Cooper.
+*   Note: need to implement all the code changes in the files mentioned as below to support interrput base mechanism. 
+devices/am_devices_cooper.c
+devices/am_devices_cooper.h
+third_party/cordio/ble-host/include/hci_cmd.h
+third_party/cordio/ble-host/include/hci_core.h
+third_party/cordio/ble-host/include/hci_tr.h
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.c
+third_party/cordio/ble-host/sources/hci/ambiq/hci_cmd.c
+third_party/cordio/ble-host/sources/hci/ambiq/hci_core.c
+third_party/cordio/ble-host/sources/hci/ambiq/hci_tr.c
+
+*   Remove unused HCI VSC APIs
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.*
+
+*   Parse connection timeout message reported from cooper.
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_dbg_trc.*
+
+*   Increased LPCLK_DRIFT_VALUE to 500ppm
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.h
+
+*   Adjust the handle of all defined services in stack to avoid handle conflict for different GATT database group.
+ambiq_ble/services/*.h
+third_party/cordio/ble-profiles/sources/services/svc_*.h
+
+*   Added check for signature writing result, and separated afterwards process for versions lower/higher than 1.14
+ambiq_ble/apps/dtm_module/dtm_main.c
+examples/ble/ble_firmware_update/src/ble_firmware_update.c
+devices/am_devices_cooper.c
+devices/am_devices_cooper.h
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.h
+
+*   Moved NVDS and VSC definitions into devices/am_devices_cooper.h
+ambiq_ble/apps/dtm_module/dtm_main.c
+devices/am_devices_cooper.h
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.h
+
+*   Setting the default IRQ priority for the Apollo4 HP/LP workaround
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.c
+
+*   Cleaned up ATT MTU request in Cordio stack
+third_party/cordio/ble-host/sources/stack/att/attc_main.c
+third_party/cordio/ble-profiles/sources/apps/app/app_slave.c
+
+*   Renamed and optimized cooper bus enable/disable interfaces to make them more clear
+devices/am_devices_cooper.c
+devices/am_devices_cooper.h
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.c
+
+*   Discard the HCI received packet with wrong type or memory allocation failure. Set the HCI RX state back to IDLE.
+third_party/cordio/ble-host/sources/hci/ambiq/hci_tr.c
+
+*   For version higher than 1.14, decreased CS assertion duration to 100us in am_devices_cooper_blocking_write since we have added more CS detections on cooper side
+devices/am_devices_cooper.c
+
+*   Create the script to generate the SBL OTA binary for Apollo4.
+tools/apollo4_amota
+
+*   Disable ENABLE_BLE_CTRL_TRACE by default to save code size.
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_dbg_trc.h
+
+*   Same or lower version of Cooper firmware update will be done only through writing fw update signature through HCI even if the rollback is enabled
+devices/am_devices_cooper.c
+
+*   Rename the funtion-scope variable sbl_status in am_devices_cooper_reset_with_sbl_check() to avoid same name with the file-scope variable
+devices/am_devices_cooper.c
+
+*   Used macro for a few NVDS values so that they can be overridded easily for different boards.
+devices/am_devices_cooper.h
+
+*   Get rid of 500us delay in isr for generating 32M clock to Cooper with a 100-200us longer from 500us to 700us for 32M clock stablized with required accuracy. Cooper won't start any RF activity sooner than about 1.2ms after asserting clock request pin, so we're sure and safe that 32MHz clock can meet PPM requirement 1.2ms after clock request assertion
+mcu/apollo4b/hal/mcu/am_hal_mcuctrl.c
+mcu/apollo4b/hal/mcu/am_hal_mcuctrl.h
+
+*   Changed NVDS_PARAMETER_WAKEUP_TIME to NVDS_PARAMETER_EXT_WAKEUP_TIME, and increased EXT_WAKEUP_TIME_VALUE and OSC_WAKEUP_TIME_VALUE to 1000us to give more margin
+devices/am_devices_cooper.h
+
+*   Changed to get cooper firmware version from the image instead of AM_DEVICES_COOPER_SBL_FW_VERSION
+ambiq_ble/apps/dtm_module/dtm_main.c
+examples/ble/ble_firmware_update/src/ble_firmware_update.c
+devices/am_devices_cooper.c
+devices/am_devices_cooper.h
+
+*   Introduced am_devices_cooper_command_write to consolidate hci cmd writing
+ambiq_ble/apps/dtm_module/dtm_main.c
+examples/ble/ble_firmware_update/src/ble_firmware_update.c
+devices/am_devices_cooper.c
+devices/am_devices_cooper.h
+utils/am_util_ble_cooper.c
+utils/am_util_ble_cooper.h
+
+*   Removed unused util APIs and added some new ones
+utils/am_util_ble_cooper.c
+utils/am_util_ble_cooper.h
+
+*   Changed HCI_ACL_QUEUE_LO to 13 to smooth the HCI data transmit flow
+third_party/cordio/ble-host/sources/hci/ambiq/hci_core.c
+
+* Changed HCI_DBG_*_CMD_OPCODE macro names to HCI_VSC_*_CMD_OPCODE
+ambiq_ble/apps/dtm_module/dtm_main.c
+examples/ble/ble_freertos_fcc_test/src/radio_task.c
+devices/am_devices_cooper.h
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_drv_cooper.c
+third_party/cordio/ble-host/sources/hci/ambiq/cooper/hci_vs_cooper.c
+utils/am_util_ble_cooper.c
+
+* Formalized cooper printing infos to make them more clear
+examples/ble/ble_firmware_update/src/ble_firmware_update.c
+devices/am_devices_cooper.c

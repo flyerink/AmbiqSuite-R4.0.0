@@ -1,0 +1,92 @@
+   text	   data	    bss	    dec	    hex	filename
+   1804	      4	     21	   1829	    725	bin/port.o
+    560	      0	     20	    580	    244	bin/nema_dc_hal.o
+   1051	     24	     34	   1109	    455	bin/nema_event.o
+    876	 983044	     32	 983952	  f0390	bin/nema_hal.o
+    897	      8	     53	    958	    3be	bin/nema_utils.o
+    108	     64	      0	    172	     ac	bin/am_resources.o
+     52	      0	      0	     52	     34	bin/gui_task.o
+   4012	      4	    188	   4204	   106c	bin/main.o
+    410	      0	      0	    410	    19a	bin/nemagfx_balls_bench.o
+    299	      0	      0	    299	    12b	bin/rtos.o
+    868	      0	  32792	  33660	   837c	bin/heap_4.o
+     72	      0	      0	     72	     48	bin/am_util_delay.o
+   3899	      0	   1025	   4924	   133c	bin/am_util_stdio.o
+   1216	      0	      0	   1216	    4c0	bin/event_groups.o
+    316	      0	      0	    316	    13c	bin/list.o
+   3860	      0	      0	   3860	    f14	bin/queue.o
+   6289	      0	    456	   6745	   1a59	bin/tasks.o
+   1824	      0	     60	   1884	    75c	bin/timers.o
+   2960	      0	      0	   2960	    b90	bin/am_devices_dsi_rm67162.o
+   1840	      0	      0	   1840	    730	bin/am_devices_nemadc_rm67162.o
+    628	  11008	      0	  11636	   2d74	bin/startup_gcc.o
+   3212	      0	      4	   3216	    c90	nema_cmdlist.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    976	      0	     20	    996	    3e4	nema_ringbuffer.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   2180	      4	      2	   2186	    88a	nema_blender.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   3084	      0	      4	   3088	    c10	nema_font.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   6516	      0	      0	   6516	   1974	nema_graphics.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   1712	      0	      0	   1712	    6b0	nema_interpolators.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+      0	      0	      0	      0	      0	nema_mmu.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    496	      0	      0	    496	    1f0	nema_ocd.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+     32	      0	      0	     32	     20	nema_pmu.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   6012	      0	      4	   6016	   1780	nema_programHW.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+      0	      0	      0	      0	      0	nema_rasterizer.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   4752	      0	      0	   4752	   1290	nema_shaderSpecific.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+     92	      0	      0	     92	     5c	nema_vertex.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   2344	      0	      0	   2344	    928	nema_easing.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    688	      0	      0	    688	    2b0	nema_math.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   2580	      0	      0	   2580	    a14	nema_matrix3x3.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   2900	      0	      0	   2900	    b54	nema_matrix4x4.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   3556	      0	      0	   3556	    de4	nema_transitions.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   3392	      0	     36	   3428	    d64	nema_dc.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    636	      0	     12	    648	    288	nema_dc_jdi.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   3436	      0	      8	   3444	    d74	nema_dc_mipi.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+     20	      0	      0	     20	     14	am_util_delay.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+   3315	      0	    257	   3572	    df4	am_util_stdio.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    708	      0	    160	    868	    364	tsi_malloc.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+    140	      0	      0	    140	     8c	nema_dc_dsi.o (ex ../../../../../../third_party/ThinkSi/config/apollo4b_nemagfx/gcc/bin/lib_nema_apollo4b_nemagfx.a)
+     40	      0	      0	     40	     28	am_hal_bootrom_helper.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1190	      0	     12	   1202	    4b2	am_hal_cachectrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   5132	      0	      0	   5132	   140c	am_hal_card.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    256	    148	      0	    404	    194	am_hal_card_host.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    628	      0	      0	    628	    274	am_hal_clkgen.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1940	      0	    484	   2424	    978	am_hal_cmdq.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1708	      0	      0	   1708	    6ac	am_hal_dsi.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    108	      0	      0	    108	     6c	am_hal_fault.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+     24	      0	      0	     24	     18	am_hal_interrupt.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   8920	      0	      0	   8920	   22d8	am_hal_iom.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2276	      0	      0	   2276	    8e4	am_hal_ios.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    500	      0	      0	    500	    1f4	am_hal_itm.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    872	      0	      0	    872	    368	am_hal_mcuctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    188	      0	      0	    188	     bc	am_hal_mpu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    372	    384	      0	    756	    2f4	am_hal_mram.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   7744	      0	      0	   7744	   1e40	am_hal_mspi.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    388	      0	      4	    392	    188	am_hal_reset.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1216	      0	      0	   1216	    4c0	am_hal_rtc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3568	      0	    212	   3780	    ec4	am_hal_sdhc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    308	      0	     12	    320	    140	am_hal_secure_ota.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    676	      0	      0	    676	    2a4	am_hal_sysctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    168	      0	      0	    168	     a8	am_hal_systick.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    100	      0	      0	    100	     64	am_hal_tpiu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2664	      0	      0	   2664	    a68	am_hal_uart.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    288	      0	      0	    288	    120	am_hal_utils.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    200	      0	      0	    200	     c8	am_hal_access.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2716	      0	     29	   2745	    ab9	am_hal_adc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3420	      0	     16	   3436	    d6c	am_hal_audadc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    736	     32	      4	    772	    304	am_hal_dcu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    101	      0	      4	    105	     69	am_hal_global.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1856	      0	   2048	   3904	    f40	am_hal_gpio.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2264	      0	      0	   2264	    8d8	am_hal_i2s.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    224	     30	      0	    254	     fe	am_hal_otp.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1528	      0	      0	   1528	    5f8	am_hal_pdm.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   4096	      0	      0	   4096	   1000	am_hal_pin.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   5819	     65	     86	   5970	   1752	am_hal_pwrctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    248	      0	      0	    248	     f8	am_hal_queue.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    380	      0	      0	    380	    17c	am_hal_security.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    740	      0	      1	    741	    2e5	am_hal_stimer.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3860	      0	     64	   3924	    f54	am_hal_timer.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   6273	      0	    264	   6537	   1989	am_hal_usb.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    808	      0	      0	    808	    328	am_hal_wdt.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   5580	    144	   2053	   7777	   1e61	am_bsp.o (ex ../../../../bsp/gcc/bin/libam_bsp.a)
+      0	    688	     72	    760	    2f8	am_bsp_pins.o (ex ../../../../bsp/gcc/bin/libam_bsp.a)
+  50536	 984852	  56256	1091644	 10a83c	bin/nemagfx_balls_bench.axf

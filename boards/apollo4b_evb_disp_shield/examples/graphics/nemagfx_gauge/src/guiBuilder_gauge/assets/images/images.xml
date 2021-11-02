@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMAGE_ASSETS>
+    <IMAGE ID="86" NAME="speedo_needle.png" FORMAT="13" R_DEFAULT="255" G_DEFAULT="0" B_DEFAULT="0" PATH="speedo_needle.png" TEXTURE_FILTERING="1" GEN_H_FILE="1"/>
+    <IMAGE ID="87" NAME="rpm_scaled.png" FORMAT="2" R_DEFAULT="0" G_DEFAULT="0" B_DEFAULT="0" PATH="rpm_scaled.png" TEXTURE_FILTERING="1" GEN_H_FILE="1"/>
+    <IMAGE ID="90" NAME="fuel2.svg" FORMAT="13" R_DEFAULT="255" G_DEFAULT="255" B_DEFAULT="255" PATH="fuel2.svg" TEXTURE_FILTERING="1" GEN_H_FILE="1"/>
+    <IMAGE ID="91" NAME="circular_knob.png" FORMAT="2" R_DEFAULT="0" G_DEFAULT="0" B_DEFAULT="0" PATH="circular_knob.png" TEXTURE_FILTERING="1" GEN_H_FILE="1"/>
+</IMAGE_ASSETS>

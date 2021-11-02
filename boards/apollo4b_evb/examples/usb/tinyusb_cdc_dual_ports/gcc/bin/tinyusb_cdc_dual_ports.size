@@ -1,0 +1,60 @@
+   text	   data	    bss	    dec	    hex	filename
+   1051	      0	      1	   1052	    41c	bin/tusb.o
+   1260	      0	      4	   1264	    4f0	bin/dcd_apollo4.o
+   2656	      0	      0	   2656	    a60	bin/tusb_fifo.o
+   8379	     24	     64	   8467	   2113	bin/usbd.o
+   1172	      0	     20	   1192	    4a8	bin/usbd_control.o
+    108	     64	      0	    172	     ac	bin/am_resources.o
+    166	      0	      0	    166	     a6	bin/apollo4_board.o
+    380	      0	      0	    380	    17c	bin/tinyusb_cdc_dual_ports.o
+    602	     20	     64	    686	    2ae	bin/usb_descriptors.o
+     72	      0	      0	     72	     48	bin/am_util_delay.o
+    298	      0	      0	    298	    12a	bin/am_util_id.o
+   3899	      0	   1025	   4924	   133c	bin/am_util_stdio.o
+   3076	      0	   4208	   7284	   1c74	bin/cdc_device.o
+    628	  11008	      0	  11636	   2d74	bin/startup_gcc.o
+   6040	    144	   2053	   8237	   202d	am_bsp.o (ex ../../../../bsp/gcc/bin/libam_bsp.a)
+      0	    744	     72	    816	    330	am_bsp_pins.o (ex ../../../../bsp/gcc/bin/libam_bsp.a)
+     40	      0	      0	     40	     28	am_hal_bootrom_helper.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1190	      0	     12	   1202	    4b2	am_hal_cachectrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   5132	      0	      0	   5132	   140c	am_hal_card.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    256	    148	      0	    404	    194	am_hal_card_host.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    628	      0	      0	    628	    274	am_hal_clkgen.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1940	      0	    484	   2424	    978	am_hal_cmdq.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1708	      0	      0	   1708	    6ac	am_hal_dsi.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    108	      0	      0	    108	     6c	am_hal_fault.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+     24	      0	      0	     24	     18	am_hal_interrupt.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   8920	      0	      0	   8920	   22d8	am_hal_iom.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2276	      0	      0	   2276	    8e4	am_hal_ios.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    500	      0	      0	    500	    1f4	am_hal_itm.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    872	      0	      0	    872	    368	am_hal_mcuctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    188	      0	      0	    188	     bc	am_hal_mpu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    372	    384	      0	    756	    2f4	am_hal_mram.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   7744	      0	      0	   7744	   1e40	am_hal_mspi.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    388	      0	      4	    392	    188	am_hal_reset.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1216	      0	      0	   1216	    4c0	am_hal_rtc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3568	      0	    212	   3780	    ec4	am_hal_sdhc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    308	      0	     12	    320	    140	am_hal_secure_ota.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    676	      0	      0	    676	    2a4	am_hal_sysctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    168	      0	      0	    168	     a8	am_hal_systick.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    100	      0	      0	    100	     64	am_hal_tpiu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2664	      0	      0	   2664	    a68	am_hal_uart.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    288	      0	      0	    288	    120	am_hal_utils.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    200	      0	      0	    200	     c8	am_hal_access.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2716	      0	     29	   2745	    ab9	am_hal_adc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3420	      0	     16	   3436	    d6c	am_hal_audadc.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    736	     32	      4	    772	    304	am_hal_dcu.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    101	      0	      4	    105	     69	am_hal_global.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1856	      0	   2048	   3904	    f40	am_hal_gpio.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   2264	      0	      0	   2264	    8d8	am_hal_i2s.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    224	     30	      0	    254	     fe	am_hal_otp.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   1528	      0	      0	   1528	    5f8	am_hal_pdm.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   4096	      0	      0	   4096	   1000	am_hal_pin.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   5819	     65	     86	   5970	   1752	am_hal_pwrctrl.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    248	      0	      0	    248	     f8	am_hal_queue.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    380	      0	      0	    380	    17c	am_hal_security.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    740	      0	      1	    741	    2e5	am_hal_stimer.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   3860	      0	     64	   3924	    f54	am_hal_timer.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+   6273	      0	    264	   6537	   1989	am_hal_usb.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+    808	      0	      0	    808	    328	am_hal_wdt.o (ex ../../../../../../mcu/apollo4b/hal/mcu/gcc/bin/libam_hal.a)
+  34204	   1632	  26408	  62244	   f324	bin/tinyusb_cdc_dual_ports.axf

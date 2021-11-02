@@ -1,0 +1,83 @@
+**********************************************************************************************
+
+Apollo4/Apollo4Blue Rev B2 Release on Aug 31 2021 (revision 4.0.0)
+
+**********************************************************************************************
+This is the first General Availability (GA) SDK Release for Apollo4/Apollo4Blue MCU.
+It supports Rev B1 and greater versions of the production Apollo4 Silicon.
+
+SDK supports all Apollo4 evaluation boards from Ambiq, and includes a number of
+predefined examples for each configuration.
+- Apollo4b EVB
+- Apollo4b Blue EVB
+- Apollo4b EVB with Display Shield
+
+IDE/ToolChain Support:
+----------------------
+AmbiqSuite SDK supports GCC, IAR and Keil IDEs.
+This release has been tested with:
+- GCC 5.4.1 20160919 (release) [ARM/embedded-5-branch revision 240496]
+- IAR ANSI C/C++ Compiler V8.50.4.261/W32 for ARM
+- Keil: ARMCC 5060750, ARM Compiler 5.06 update 6 (build 750)
+
+* Apollo4b is natively supported in J-Link v6.96 or later.
+* IAR natively supports Apollo4b with v9.10.2. 
+  Please follow instructions in \debugger_updates to work with previous versions of IAR.
+* Keil support is included with v1.2.9 pack bundled with this release (\debugger_updates).
+* GCC simply builds for Cortex M4F.
+
+
+Known Issues:
+-------------
+This Apollo4 SDK uses dynamic trim adjustments to address certain stability and power issues. The Software
+keeps track of the state using global variables, to ensure trim adjustments are only applied once.
+However, if the customer's design includes a secondary bootloader - there are more than one binaries
+in flow, and global SW state is not enough to prevent double adjustment.
+A future release would address this usecase.
+
+Top Level Directory Structure:
+------------------------------
+.
++-- ambiq_ble <BLE apps/profiles/services used on top of Cordio>
++-- boards
+¦   +-- apollo4b_blue_evb <Ambiq Apollo4 BGA Evaluation Board>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
+¦   +-- apollo4b_evb <Ambiq Apollo4 Blue Evaluation Board>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
+¦   +-- apollo4b_evb_disp_shield <Ambiq Apollo4b Evaluation Board with Display Shield>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
++-- bootloader <utility functions for secondary bootloader or other applications>
++-- CMSIS <ARM CMSIS definitions and functions>
++-- debugger_updates <Updates to debugger/IDEs to work with Apollo4>
++-- devices <Device Drivers for selected peripherals using Apollo4 HAL>
++-- docs
+¦   +-- licenses
+¦   +-- registers <Register Documentation>
+¦   +-- releasenotes <Release Notes and Change History>
++-- makedefs <Part of build infrastructure>
++-- mcu <HAL and Register definitions>
++-- pack <SVD files>
++-- third_party <third Party Code/Documents>
+¦   +-- cordio <BLE Stack from ARM>
+¦   +-- crypto <instructions/assets to use/port Crypto library from ARM>
+¦   +-- FatFs <Generic FatFS implementation from Open souce>
+¦   +-- FreeRTOSv10.1.1 <Reference FreeRTOS open source implementation>
+¦   +-- prime_mpi <Reference Prime number parallel processing implementation>
+¦   +-- SEGGER < SEGGER RTT implementation for system monitoring and interactive user I/O in embedded applications>
+¦   +-- ThinkSi <ThinkSilicon Graphics library assets>
+¦   +-- tinyusb <TinyUSB USB stack implementation>
+¦   +-- uecc <small and fast ECDH and ECDSA implementation>
++-- tools
+¦   +-- apollo4_amota <Tools to interact with Ambiq's BLE Reference Application for Image download and updates>
+¦   +-- apollo4b_scripts <Provisioning and Image generation/update tools, along with SBL updates>
+¦   +-- bootloader_scripts
+¦   ¦   +-- generate_ota_descriptor.py
+¦   ¦   +-- uart_boot_host.py
+¦   +-- bsp_generator <Tools for Automated BSP generation>
+¦   +-- config  <Part of build infrastructure>
+¦   +-- linker_config <Part of build infrastructure>
++-- utils <General Utilities>
++-- VERSION.txt
